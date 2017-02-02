@@ -52,6 +52,12 @@ namespace NetTimeZone
             long unixTime = ((DateTime.UtcNow.Ticks - epochTicks) / TimeSpan.TicksPerSecond);
             return unixTime;
         }
+        public static long DateTimeToUnixTimestamp(DateTime dt)
+        {
+            long epochTicks = new DateTime(1970, 1, 1).Ticks;
+            long unixTime = ((dt.Ticks - epochTicks) / TimeSpan.TicksPerSecond);
+            return unixTime;
+        }
     }
     public class TimeZoneParam
     {
