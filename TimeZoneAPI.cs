@@ -7,7 +7,7 @@ using System.Net;
 using System.Text;
 using System.Web;
 
-namespace ENROLA_WEBAPP
+namespace NetTimeZone
 {
     public class TimeZoneAPI
     {
